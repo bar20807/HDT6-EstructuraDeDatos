@@ -1,7 +1,14 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.util.*;
+
+/**
+ * 
+ * @author Josï¿½ Rodrigo Barrera Garcï¿½a y Oscar Fernando Lopez Barrios
+ * Carnets: 20807 y 20679
+ * Universidad del Valle de Guatemalas
+ *
+ */
 
 public class Main {
 
@@ -13,15 +20,15 @@ public class Main {
         MapGeneral<String, Card> userCards;
         String resp;
 
-        System.out.println("Ingrese el tipo de Map que desee utilizar (HM/HashMap, LM/LinkedHashMap, TM/TreeMap): ");
+        System.out.println("Ingrese el tipo de Map que desee utilizar: ");
         System.out.println("1) HashMap\n2) LinkedHashMap\n3) TreeMap");
 
         resp = entrada.nextLine();
-        userCards = mapFactory.getMap(resp.toUpperCase());
-        cartas= mapFactory.getMap(resp.toUpperCase());
+        userCards = mapFactory.getMap(resp);
+        cartas= userCards;
 
         try {
-            File myObj = new File("src/Cartas.txt");
+            File myObj = new File("Cartas.txt");
             Scanner Lector = new Scanner(myObj);
             while (Lector.hasNextLine()) {
                 String dato = Lector.nextLine();
@@ -39,13 +46,13 @@ public class Main {
         boolean Menu = true;
         while (Menu) {
 
-            System.out.println("\nNuevamente ingrese la opción que desee realizar:" +
+            System.out.println("\nNuevamente ingrese la opciï¿½n que desee realizar:" +
                     "\n1) Agregar una carta a la coleccion." +
                     "\n2) Ver clase de la carta perteneciente en la coleccion." +
                     "\n3) Mostrar la informacion de cada carta en la coleccion." +
                     "\n4) Mostrar la informacion de cada carta en la coleccion ordenada por clase." +
-                    "\n5) Mostrar la informacion de cada carta existente en la colección." +
-                    "\n6) Mostrar la informacion de cada carta existente en la colección ordenada por clase."+
+                    "\n5) Mostrar la informacion de cada carta existente en la colecciï¿½n." +
+                    "\n6) Mostrar la informacion de cada carta existente en la colecciï¿½n ordenada por clase."+
                     "\n7) Salir.");
 
             int opcion = 0;

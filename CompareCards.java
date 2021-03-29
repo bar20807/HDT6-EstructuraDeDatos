@@ -1,11 +1,12 @@
 import java.util.Comparator;
 /**
  * 
- * @author José Rodrigo Barrera García y Oscar Fernando Lopez Barrios
+ * @author Josï¿½ Rodrigo Barrera Garcï¿½a y Oscar Fernando Lopez Barrios
  * Carnets: 20807 y 20679
  * Universidad del Valle de Guatemalas
  *
  */
+
 class CompareCards implements Comparator<Card>
 {
     // Used for sorting in ascending order of 

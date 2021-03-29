@@ -1,8 +1,6 @@
-import java.util.HashMap;
-
 /**
  * 
- * @author José Rodrigo Barrera García y Oscar Fernando Lopez Barrios
+ * @author Josï¿½ Rodrigo Barrera Garcï¿½a y Oscar Fernando Lopez Barrios
  * Carnets: 20807 y 20679
  * Universidad del Valle de Guatemala
  *
@@ -12,19 +10,19 @@ import java.util.HashMap;
 
 public class MapMenuFactory<K,E> {
 
-    /*Por medio del diseño Factory se escoge la implementación que se 
+    /*Por medio del diseï¿½o Factory se escoge la implementaciï¿½n que se 
      * desea utilizar para el Stack
      */
      
     public MapGeneral<K,E> getMap(String entry) {
         
-    	//Codigo que se encarga de seleccionar la implementación que deseamos utilizar
+    	//Codigo que se encarga de seleccionar la implementaciï¿½n que deseamos utilizar
     	
-        if (entry.equals("HM"))
+        if (entry.equals("1"))
             return new hashMap<K,E>();
-        else if(entry.equals("LM"))
+        else if(entry.equals("2"))
             return new linkedHashMap<K,E>();
-        else if(entry.equals("TM"))
+        else if(entry.equals("3"))
             return new treeMap<K,E>();
         else {
             System.out.println("\nLo sentimos, usted ingreso un parametro desconocido. Por defecto le hemos asignado HashMap de manera estandar para continuar con la operacion\n");

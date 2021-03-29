@@ -2,6 +2,14 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.TreeMap;
 
+/**
+ * 
+ * @author Jos� Rodrigo Barrera Garc�a y Oscar Fernando Lopez Barrios
+ * Carnets: 20807 y 20679
+ * Universidad del Valle de Guatemalas
+ *
+ */
+
 public class treeMap<K,O> extends TreeMap<K, O> implements MapGeneral<K, O> {
 
     @Override

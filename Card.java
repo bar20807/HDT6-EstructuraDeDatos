@@ -1,3 +1,11 @@
+/**
+ * 
+ * @author Jos� Rodrigo Barrera Garc�a y Oscar Fernando Lopez Barrios
+ * Carnets: 20807 y 20679
+ * Universidad del Valle de Guatemalas
+ *
+ */
+
 public class Card implements Comparable<Card> {
 
     private String name;
